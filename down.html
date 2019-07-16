@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>拼图宝</title>
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+  <link rel="stylesheet" href="down.css">
+
+</head>
+
+<body>
+  <!-- 手机端大屏部分 -->
+  <div id="apps" style="display: none" class="swiper-container">
+    <div class="swiper-wrapper">
+      <!-------------slide1----------------->
+      <section class="swiper-slide swiper-slide1">
+        <image class="slide1-image1" src="img/logo@2x.png"></image>
+        <image class="slide1-image2" src="img/slogans@2x.png"></image>
+
+      </section>
+      <!---------------slide2-------------->
+      <section class="swiper-slide swiper-slide2">
+        <image class="slide2-image1" src="img/wudagongneng@2x.png"></image>
+        <image class="slide2-image2" src="img/phone@2x.png"></image>
+        <video class="slide2-video" controls poster="img/Bitmap.jpg">
+          <source src="img/movie.mp4" type="video/mp4">
+        </video>
+        <!-- 多设置一个用于flex布局 -->
+        <div style="width: 10px;height: 465px;"></div>
+      </section>
+      <!----------------slide3-------------->
+      <section class="swiper-slide swiper-slide3">
+        <div class="slide3-font">多种模版任你定制</div>
+        <image class="slide-image" src="img/Group1@2x.png"></image>
+
+
+        <!-- 多设置一个用于flex布局 -->
+        <div style="width: 10px;height: 450px;"></div>
+      </section>
+      <!-------------slide4----------------->
+      <section class="swiper-slide swiper-slide4">
+        <div class="slide3-font">影视字幕拼接神器</div>
+        <image class="slide-image" src="img/Group2@2x.png"></image>
+
+
+        <!-- 多设置一个用于flex布局 -->
+        <div style="width: 10px;height: 450px;"></div>
+      </section>
+
+      <!-------------slide5----------------->
+      <section class="swiper-slide swiper-slide5">
+        <div class="slide3-font">专业编辑设计工具</div>
+        <image class="slide-image" src="img/Group3@2x.png"></image>
+
+
+        <!-- 多设置一个用于flex布局 -->
+        <div style="width: 10px;height: 450px;"></div>
+      </section>
+
+      <!-------------slide6----------------->
+      <section class="swiper-slide swiper-slide6">
+        <div class="slide3-font">聊天长图轻松搞定</div>
+        <image class="slide-image" src="img/Group4@2x.png"></image>
+
+
+        <!-- 多设置一个用于flex布局 -->
+        <div style="width: 10px;height: 450px;"></div>
+      </section>
+
+      <!-------------slide7----------------->
+      <section class="swiper-slide swiper-slide7">
+        <div class="slide3-font">一键切图玩转创意</div>
+        <image class="slide-image" src="img/Group5@2x.png"></image>
+
+
+        <!-- 多设置一个用于flex布局 -->
+        <div style="width: 10px;height: 450px;"></div>
+      </section>
+    </div>
+    <!-- 按钮 + 图片 -->
+    <img src="img/arrow.png" id="array" class="resize">
+    <div class="botton" id="downbotton">
+      立即下载APP
+    </div>
+    <!-- 蒙层 -->
+    <div id="mask" style="display: none" class="mask">
+      <image class="wx-img" src="img/wx_img.png">
+
+      </image>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <!-- 手机端大屏部分结束 -->
+
+  <!-- 手机端中屏部分开始 -->
+  <div id="apps-six" style="display: none" class="swiper-container">
+    <div class="swiper-wrapper">
+      <!-------------slide1----------------->
+      <section class="swiper-slide swiper-slide1">
+        <image class="slide1-image1-se" src="img/logo@2x.png"></image>
+        <image class="slide1-image2" src="img/slogans@2x.png"></image>
+
+      </section>
+      <!---------------slide2-------------->
+      <section class="swiper-slide swiper-slide2">
+        <image class="slide2-image1" src="img/wudagongneng@2x.png"></image>
+        <image class="slide2-image2-six" src="img/phone@2x-6.png"></image>
+        <video class="slide2-video-six" controls poster="img/Bitmap.jpg">
+          <source src="img/movie.mp4" type="video/mp4">
+        </video>
+        <!-- 多设置一个用于flex布局 -->
+        <div style="width: 10px;height: 440px;"></div>
+      </section>
+      <!----------------slide3-------------->
+      <section class="swiper-slide swiper-slide3">
+        <div class="slide3-font-se">多种模版任你定制</div>
+        <image class="slide-image-six" src="img/Group1@2x-6.png"></image>
+
+
+        <!-- 多设置一个用于flex布局 -->
+        <div style="width: 10px;height: 420px;"></div>
+      </section>
+      <!-------------slide4----------------->
+      <section class="swiper-slide swiper-slide4">
+        <div class="slide3-font-se">影视字幕拼接神器</div>
+        <image class="slide-image-six" src="img/Group2@2x-6.png"></image>
+
+
+        <!-- 多设置一个用于flex布局 -->
+        <div style="width: 10px;height: 420px;"></div>
+      </section>
+
+      <!-------------slide5----------------->
+      <section class="swiper-slide swiper-slide5">
+        <div class="slide3-font-se">专业编辑设计工具</div>
+        <image class="slide-image-six" src="img/Group3@2x-6.png"></image>
+
+
+        <!-- 多设置一个用于flex布局 -->
+        <div style="width: 10px;height: 420px;"></div>
+      </section>
+
+      <!-------------slide6----------------->
+      <section class="swiper-slide swiper-slide6">
+        <div class="slide3-font-se">聊天长图轻松搞定</div>
+        <image class="slide-image-six" src="img/Group4@2x-6.png"></image>
+
+
+        <!-- 多设置一个用于flex布局 -->
+        <div style="width: 10px;height: 420px;"></div>
+      </section>
+
+      <!-------------slide7----------------->
+      <section class="swiper-slide swiper-slide7">
+        <div class="slide3-font-se">一键切图玩转创意</div>
+        <image class="slide-image-six" src="img/Group5@2x-6.png"></image>
+
+
+        <!-- 多设置一个用于flex布局 -->
+        <div style="width: 10px;height: 420px;"></div>
+      </section>
+    </div>
+    <!-- 按钮 + 图片 -->
+    <img src="img/arrow.png" id="array-six" class="resize">
+    <div class="botton" id="downbotton-six">
+      立即下载APP
+    </div>
+    <!-- 蒙层 -->
+    <div id="mask-six" style="display: none" class="mask">
+      <image class="wx-img" src="img/wx_img.png">
+
+      </image>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <!-- 手机端中屏部分结束 -->
+
+  <!-- 手机端小屏部分开始 -->
+  <div id="apps-small" style="display: none" class="swiper-container">
+    <div class="swiper-wrapper">
+      <!-------------slide1----------------->
+      <section class="swiper-slide swiper-slide1">
+        <image class="slide1-image1-se" src="img/logo@2x.png"></image>
+        <image class="slide1-image2" src="img/slogans@2x.png"></image>
+
+      </section>
+      <!---------------slide2-------------->
+      <section class="swiper-slide swiper-slide2">
+        <image class="slide2-image1-se" src="img/wudagongneng@2x.png"></image>
+        <image class="slide2-image2-se" src="img/phone@2x-se.png"></image>
+        <video class="slide2-video-se" controls poster="img/Bitmap.jpg">
+          <source src="img/movie.mp4" type="video/mp4">
+        </video>
+        <!-- 多设置一个用于flex布局 -->
+        <div style="width: 10px;height: 360px;"></div>
+      </section>
+      <!----------------slide3-------------->
+      <section class="swiper-slide swiper-slide3">
+        <div class="slide3-font-se">多种模版任你定制</div>
+        <image class="slide-image-se" src="img/Group1@2x-se.png"></image>
+
+
+        <!-- 多设置一个用于flex布局 -->
+        <div style="width: 10px;height: 360px;"></div>
+      </section>
+      <!-------------slide4----------------->
+      <section class="swiper-slide swiper-slide4">
+        <div class="slide3-font-se">影视字幕拼接神器</div>
+        <image class="slide-image-se" src="img/Group2@2x-se.png"></image>
+
+
+        <!-- 多设置一个用于flex布局 -->
+        <div style="width: 10px;height: 360px;"></div>
+      </section>
+
+      <!-------------slide5----------------->
+      <section class="swiper-slide swiper-slide5">
+        <div class="slide3-font-se">专业编辑设计工具</div>
+        <image class="slide-image-se" src="img/Group3@2x-se.png"></image>
+
+
+        <!-- 多设置一个用于flex布局 -->
+        <div style="width: 10px;height: 360px;"></div>
+      </section>
+
+      <!-------------slide6----------------->
+      <section class="swiper-slide swiper-slide6">
+        <div class="slide3-font-se">聊天长图轻松搞定</div>
+        <image class="slide-image-se" src="img/Group4@2x-se.png"></image>
+
+
+        <!-- 多设置一个用于flex布局 -->
+        <div style="width: 10px;height: 360px;"></div>
+      </section>
+
+      <!-------------slide7----------------->
+      <section class="swiper-slide swiper-slide7">
+        <div class="slide3-font-se">一键切图玩转创意</div>
+        <image class="slide-image-se" src="img/Group5@2x-se.png"></image>
+
+
+        <!-- 多设置一个用于flex布局 -->
+        <div style="width: 10px;height: 360px;"></div>
+      </section>
+    </div>
+    <!-- 按钮 + 图片 -->
+    <img src="img/arrow.png" id="array-se" class="resize">
+    <div class="botton" id="downbotton-se">
+      立即下载APP
+    </div>
+    <!-- 蒙层 -->
+    <div id="mask-se" style="display: none" class="mask">
+      <image class="wx-img" src="img/wx_img.png">
+
+      </image>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+<!-- 手机端小屏部分结束 -->
+
+  <!-- PC端 -->
+  <div id="pc" style="display: none" class="">
+    <!-- 国民拼图神器 -->
+    <div class="download-box">
+      <div class="col-xs-10 col-sm-8 col-md-8 col-lg-6 download">
+        <image class="download-image" src="img/Title1@2x.png"></image>
+        <div class="equipment">
+          <image class="equipment-image" src="img/download@2x.png"></image>
+          <div class="one-dimension-code"></div>
+        </div>
+      </div>
+    </div>
+    <!-- 五大功能 -->
+    <div class="function-box">
+      <div class="col-xs-10 col-sm-8 col-md-8 col-lg-7 function">
+        <image class="function-image" src="img/Title2@2x.png"></image>
+      </div>
+    </div>
+    <!-- 操作实例 -->
+    <div class="handle-box">
+      <div class="col-xs-10 col-sm-8 col-md-8 col-lg-7 handle">
+        <image class="handle-image" src="img/Title3@2x.png"></image>
+      </div>
+      <div class="col-xs-10 col-sm-8 col-md-8 col-lg-6 handle-content">
+        <image class="handle-image-content" src="img/Bitmap@2x.png"></image>
+      </div>
+      <div class="col-lg-6 down-box">
+        <image class="down-image" src="img/download2@2x.png"></image>
+        <div class="two-dimension-code"></div>
+      </div>
+    </div>
+    <!-- 底部页脚 -->
+    <div class="footer">
+      声明：本软件仅供个人娱乐使用，请勿用于非法用途！！
+    </div>
+
+  </div>
+
+
+  <!-- swiper -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+  <script src="down.js"></script>
+  <script>
+    var img = document.getElementById("array")
+    var img_se = document.getElementById("array-se")
+    var img_six = document.getElementById("array-six")
+    var downbotton = document.getElementById("downbotton")
+    var downbotton_se = document.getElementById("downbotton-se")
+    var downbotton_six = document.getElementById("downbotton-six")
+    var mySwiper = new Swiper('.swiper-container', {
+      direction: 'vertical',
+      pagination: '.swiper-pagination',
+      //virtualTranslate : true,
+      mousewheelControl: true,
+      onInit: function (swiper) {
+        // swiperAnimateCache(swiper);
+        // swiperAnimate(swiper);
+      },
+      onSlideChangeEnd: function (swiper) {
+        // swiperAnimate(swiper);
+      },
+      onTransitionEnd: function (swiper) {
+        // swiperAnimate(swiper);
+      },
+      // watchSlidesProgress: true,
+
+      onSlideChangeStart: function (swiper) {
+        console.log(swiper.activeIndex)
+        if (swiper.activeIndex === 1) {
+          img.style.display = "none";
+          img_se.style.display = "none";
+          img_six.style.display = "none";
+          downbotton.style.display = "none";
+          downbotton_se.style.display = "none";
+          downbotton_six.style.display = "none";
+        }else if(swiper.activeIndex === 6){
+          img.style.display = "none";
+          img_se.style.display = "none";
+          img_six.style.display = "none";
+          downbotton.style.display = "block";
+          downbotton_se.style.display = "block";
+          downbotton_six.style.display = "block";
+        }
+        else {
+          img_se.style.display = "block";
+          img.style.display = "block";
+          img_six.style.display = "block";
+          downbotton.style.display = "block";
+          downbotton_se.style.display = "block";
+          downbotton_six.style.display = "block";
+        }
+      }
+    })
+  </script>
+</body>
+
+</html>
