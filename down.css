@@ -395,15 +395,23 @@ body{
         height: 443px;
         background-color: #000;
       }
-      .slide2-image2-six {
+    .slide2-image2-six {
         position: absolute;
         bottom: 0;
         width: 70%;
         height: 478px;
-      }
-      .slide-image-six{
+    }
+    .slide-image-six{
         position: absolute;
         bottom: 0;
         height: 478px;
         max-width: 70%;
-      }
+    }
+    .slide3-font-six {
+        text-align: center;
+        width:230px;
+        font-size:26px;
+        font-family:PingFangSC-Medium;
+        font-weight:500;
+        color:rgba(54,54,54,1);
+    }
